@@ -1,5 +1,9 @@
 require 'sinatra'
 
-get '/' do
-  send_file './public/index.html'
+class App < Sinatra::Base
+
+  get "/" do
+    send_file './public/index.html'    
+  end
+
 end
